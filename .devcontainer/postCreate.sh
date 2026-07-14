@@ -1,7 +1,5 @@
-{
-  "name": "Basic Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "features": {
+"postCreateCommand": ".devcontainer/postCreate.sh"
+"features": {
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": true,
       "version": "3.10"
@@ -15,4 +13,3 @@
       ]
     }
   }
-}
