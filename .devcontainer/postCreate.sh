@@ -1,15 +1,6 @@
-"postCreateCommand": ".devcontainer/postCreate.sh"
-"features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "installTools": true,
-      "version": "3.10"
-    }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-python.debugpy"
-      ]
-    }
-  }
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install sl
+echo "export PATH=\$PATH:/usr/games" >> ~/.bashrc
+echo "export PATH=\$PATH:/usr/games" >> ~/.zshrc
